@@ -1,0 +1,42 @@
+--first program in lamda
+
+
+comp Coordinates:
+    #latitude, #longitude: scalar;
+endcomp;
+
+
+ def foo(x: integer, y[22]: scalar, alpha: str, z[15]: integer) -> integer:
+    a=readStr();
+    if (x<y[1]):
+        return x;
+    else:
+        return (x-1);
+    endif;
+enddef;
+
+def main():
+    const pi = 3.14152: scalar;
+
+    w, z: Coordinates;
+
+    a, b: integer;--this is a comment
+
+    a=2;
+
+    array[15]: boolean;
+
+    for i in [10:-1:100]:
+        if (a==2):
+            b=foo(x, y, z);
+            a+=b;
+        endif;
+    endfor;
+    a=0;
+    while (a<5):
+        if (a==0):
+            break;
+        endif;
+        a+=1;
+    endwhile;
+enddef;

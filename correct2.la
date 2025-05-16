@@ -1,0 +1,47 @@
+--first program in lamda
+--i havent implemented functions inside comp types
+
+@defmacro my2pi (2*3.14159265)
+@defmacro myname "John"
+
+
+comp Coordinates:
+    #latitude, #longitude: scalar;
+endcomp;
+
+const N = 100: integer;
+
+ def foo(x: integer, y[22]: scalar, alpha: str, z[15]: integer) -> integer:
+
+    a[100]: integer;
+
+    for i in [0:N]:
+        a[i] = i;
+    endfor;
+
+    a := [i for i:100]:integer;
+
+
+    return 1;
+
+enddef;
+
+def testMacros():
+
+    writeStr(myname);
+    piTimes2 = my2pi; 
+
+enddef;
+
+
+const N = 100: integer;
+a[100]: integer;
+
+def main():
+    
+    for i in [0:N]:
+        a[i] = i;
+    endfor;
+
+    half := [ x / 2 for x: integer in a of 100] : scalar;
+enddef;
