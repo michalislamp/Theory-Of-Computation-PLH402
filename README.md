@@ -2,3 +2,5 @@ Implementation of Lectical Analyzer using flex and a Parser using Bison, impleme
  -`make all`
  -`make run`
  -`make clean`
+
+ Grade 8.5/10 because i have not implemented complex functions!
